@@ -1,0 +1,14 @@
+﻿<MudNavMenu>
+    <MudNavLink Href="/" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
+    <MudNavGroup Title="API References" Expanded="false" Icon="@Icons.Material.Filled.Api">
+        @foreach (var item in AutomationAPIs)
+        {
+            if (item.Route != null)
+            {
+                <MudNavLink Href=@($"{item.Route}/{item.Id}")>@item.Name</MudNavLink>
+            }
+        }
+    </MudNavGroup>
+
+</MudNavMenu>
+

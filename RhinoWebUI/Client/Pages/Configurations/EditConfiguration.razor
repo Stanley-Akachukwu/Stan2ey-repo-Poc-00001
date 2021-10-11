@@ -1,0 +1,107 @@
+﻿@page "/editconfiguration"
+@page "/editconfiguration/{id}"
+@using RhinoWebUI.Shared.Models.Configurations
+@inject ISnackbar Snackbar
+<MudText Typo="Typo.body1" Align="Align.Center" Class="my-4">
+    Edit  Configuration
+</MudText>
+
+
+
+
+<MudGrid>
+
+    <MudItem xs="12" sm="12">
+        <MudTable Items="@Elements" Dense="@dense" Hover="@hover" ReadOnly="@ronly" CanCancelEdit="@canCancelEdit" Filter="new Func<Element,bool>(ElementFilterFunc)" @bind-SelectedItem="selectedElementItem1" SortLabel="Sort By"
+                  CommitEditTooltip="Commit Edit" OnCommitEditClick="@(() =>ShowElementItemUpdateFeedBack())" RowEditPreview="ElementBackupItem" RowEditCancel="ResetElementItemToOriginalValues" RowEditCommit="ElementItemHasBeenCommitted">
+            <ToolBarContent>
+                <MudText Typo="Typo.h6">@Elements.Count() Elements</MudText>
+                <MudSpacer />
+                <MudTextField @bind-Value="elementSearchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            </ToolBarContent>
+            <HeaderContent>
+                <MudTh><MudTableSortLabel SortBy="new Func<Element, object>(x=>x.ConfigurationItemId)">ConfigurationID</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Element, object>(x=>x.ElementName)">Element</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<Element, object>(x=>x.Index)">Index</MudTableSortLabel></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="ConfigurationItemId">@context.ConfigurationItemId</MudTd>
+                <MudTd DataLabel="ElementName">@context.ElementName</MudTd>
+                <MudTd DataLabel="Index">@context.Index</MudTd>
+            </RowTemplate>
+            <RowEditingTemplate>
+                <MudTd DataLabel="ConfigurationItemId">
+                    @context.ConfigurationItemId
+                </MudTd>
+                <MudTd DataLabel="ElementName">
+                    <MudTextField @bind-Value="@context.ElementName" Label="Edit here" Required Variant="Variant.Outlined" />
+                </MudTd>
+                <MudTd DataLabel="Index">
+                    @context.Index
+                </MudTd>
+            </RowEditingTemplate>
+            <PagerContent>
+                <MudTablePager />
+            </PagerContent>
+        </MudTable>
+    </MudItem>
+</MudGrid>
+
+ <MudSpacer />
+  <MudDivider />
+
+<MudGrid>
+    <MudItem xs="12" sm="12">
+        <MudTable Items="@Tests" Dense="@dense" Hover="@hover" ReadOnly="@ronly" CanCancelEdit="@canCancelEdit" Filter="new Func<Test,bool>(TestFilterFunc)" @bind-SelectedItem="selectedTestItem1" SortLabel="Sort By"
+                  CommitEditTooltip="Commit Edit" OnCommitEditClick="@(() =>ShowTestItemUpdateFeedBack())" RowEditPreview="TestBackupItem" RowEditCancel="ResetTestItemToOriginalValues" RowEditCommit="TestItemHasBeenCommitted">
+            <ToolBarContent>
+                <MudText Typo="Typo.h6">@Tests.Count() Tests</MudText>
+                <MudSpacer />
+                <MudTextField @bind-Value="testSearchString" Placeholder="Search" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+            </ToolBarContent>
+            <HeaderContent>
+                <MudTh><MudTableSortLabel SortBy="new Func<Test, object>(x=>x.ConfigurationItemId)">ConfigurationID</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Test, object>(x=>x.TestItem)">Test</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<Test, object>(x=>x.Index)">Index</MudTableSortLabel></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="ConfigurationItemId">@context.ConfigurationItemId</MudTd>
+                <MudTd DataLabel="TestItem">@context.TestItem </MudTd>
+                <MudTd DataLabel="Index">@context.Index</MudTd>
+            </RowTemplate>
+            <RowEditingTemplate>
+                <MudTd DataLabel="ConfigurationItemId">
+                    @context.ConfigurationItemId
+                </MudTd>
+                <MudTd DataLabel="TestItem">
+                    <MudTextField @bind-Value="@context.TestItem" Label="Edit here" Required Variant="Variant.Outlined" />
+                </MudTd>
+                <MudTd DataLabel="Index">
+                    @context.Index
+                </MudTd>
+            </RowEditingTemplate>
+            <PagerContent>
+                <MudTablePager />
+            </PagerContent>
+        </MudTable>
+    </MudItem>
+</MudGrid>
+@if (showUpdateAllButton)
+{
+     <MudCard>
+            <MudCardActions>
+    <MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" OnClick="@(() =>UpdateConfigurationItem())" Color="Color.Dark" Class="ml-auto">Update Configuration</MudButton>
+    </MudCardActions>
+        </MudCard>
+
+}
+@if(isBusy)
+{
+                    <MudContainer MaxWidth="MaxWidth.Large">
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="my-4">
+                            <MudProgressLinear Color="Color.Dark" Indeterminate="true" />
+                        </MudText>
+                    </MudContainer>
+}
+
+ 

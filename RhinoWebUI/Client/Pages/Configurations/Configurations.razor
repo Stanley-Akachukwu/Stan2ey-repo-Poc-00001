@@ -1,0 +1,37 @@
+﻿@page "/configurations"
+@page "/configurations/{id:int}"
+@using RhinoWebUI.Shared.Models.Configurations;
+
+<MudTable Items="@configurationList" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Dark" @ref="mudTable">
+    <HeaderContent>
+        <MudTh>ID</MudTh>
+        <MudTh># of Elements</MudTh>
+        <MudTh># of Test</MudTh>
+        <MudTh>Actions</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="ID">@context.Id</MudTd>
+        <MudTd DataLabel="Elements">@context.NumberOfElements</MudTd>
+        <MudTd DataLabel="Tests">@context.NumberOfTests</MudTd>
+        <MudTd>
+            <MudButton Variant="Variant.Filled" Color="Color.Dark" Size="Size.Small" OnClick="@(() =>
+           ShowEditConfiguration(context))">Edit</MudButton>
+        </MudTd>
+
+        <MudTd>
+            <MudButton Variant="Variant.Filled" Color="Color.Warning" Size="Size.Small" OnClick="@(() =>
+           DeleteConfiguration(context))">Delete</MudButton>
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+
+ @if (configurationList==null)
+{
+ <MudText Typo="Typo.h6" Align="Align.Center" Class="my-8 alert-info">
+                No matching configuration records found.
+            </MudText>
+}
+
+
+
+ 

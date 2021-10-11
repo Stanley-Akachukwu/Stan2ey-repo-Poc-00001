@@ -1,0 +1,8 @@
+﻿@page "/"
+@code {
+    [Inject] public NavigationManager _navigationManager { get; set; }
+    protected override void OnInitialized()
+    {
+        _navigationManager.NavigateTo($"/dashboard");
+    }
+}

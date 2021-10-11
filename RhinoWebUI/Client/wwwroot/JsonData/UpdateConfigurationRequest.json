@@ -1,0 +1,57 @@
+{
+  "name": "Rhino Automation - Chrome & Firefox - After Update",
+  "testsRepository": [
+
+  ],
+  "driverParameters": [
+    {
+      "driver": "ChromeDriver",
+      "driverBinaries": "."
+    },
+    {
+      "driver": "FirefoxDriver",
+      "driverBinaries": "."
+    }
+  ],
+  "dataSource": [
+
+  ],
+  "models": [
+
+  ],
+  "authentication": {
+    "password": "",
+    "userName": ""
+  },
+  "engineConfiguration": {
+    "maxParallel": 1,
+    "failOnException": false,
+    "optimalThreshold": 3,
+    "qualityThreshold": 0,
+    "toleranceThreshold": 0,
+    "priority": 0,
+    "severity": 0,
+    "errorOnExitCode": 0,
+    "elementSearchingTimeout": 15000,
+    "pageLoadTimeout": 60000,
+    "retrunExceptions": true,
+    "returnPerformancePoints": true,
+    "returnEnvironment": true,
+    "terminateOnAssertFailure": false
+  },
+  "screenshotsConfiguration": {
+    "keepOriginal": false,
+    "returnScreenshots": false,
+    "onExceptionOnly": false
+  },
+  "reportConfiguration": {
+    "reporters": [
+      "reporter_basic",
+      "reporter_warehouse"
+    ],
+    "dataProvider": null,
+    "archive": false,
+    "localReport": true,
+    "addGravityData": true
+  }
+}

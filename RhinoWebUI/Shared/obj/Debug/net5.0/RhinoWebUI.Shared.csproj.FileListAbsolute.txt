@@ -1,0 +1,24 @@
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\RhinoWebUI.Shared.deps.json
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\RhinoWebUI.Shared.dll
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\ref\RhinoWebUI.Shared.dll
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\RhinoWebUI.Shared.pdb
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.AssemblyInfo.cs
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.dll
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\ref\RhinoWebUI.Shared.dll
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.pdb
+C:\Users\user\source\repos\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\RhinoWebUI.Shared.deps.json
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\RhinoWebUI.Shared.dll
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\ref\RhinoWebUI.Shared.dll
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\bin\Debug\net5.0\RhinoWebUI.Shared.pdb
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.AssemblyInfo.cs
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.dll
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\ref\RhinoWebUI.Shared.dll
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.pdb
+C:\Users\user\Desktop\Clone\source\repos\Rhino Work\RhinoWebClient\RhinoWebUI\Shared\obj\Debug\net5.0\RhinoWebUI.Shared.csproj.AssemblyReference.cache
